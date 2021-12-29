@@ -1,0 +1,86 @@
+{
+  "version": 4,
+  "terraform_version": "1.0.11",
+  "serial": 56,
+  "lineage": "12175ced-232d-a01b-5d9c-0873813c73b2",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "aws_s3_bucket",
+      "name": "newbucket",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "acceleration_status": "",
+            "acl": null,
+            "arn": "arn:aws:s3:::demo-training-88",
+            "bucket": "demo-training-88",
+            "bucket_domain_name": "demo-training-88.s3.amazonaws.com",
+            "bucket_prefix": null,
+            "bucket_regional_domain_name": "demo-training-88.s3.us-west-2.amazonaws.com",
+            "cors_rule": [],
+            "force_destroy": null,
+            "grant": [],
+            "hosted_zone_id": "Z3BJ6K6RIION7M",
+            "id": "demo-training-88",
+            "lifecycle_rule": [],
+            "logging": [],
+            "object_lock_configuration": [],
+            "policy": null,
+            "region": "us-west-2",
+            "replication_configuration": [
+              {
+                "role": "arn:aws:iam::459635311638:role/service-role/s3crr_role_for_demo-training-88",
+                "rules": [
+                  {
+                    "delete_marker_replication_status": "",
+                    "destination": [
+                      {
+                        "access_control_translation": [],
+                        "account_id": "",
+                        "bucket": "arn:aws:s3:::pj-dev-replica",
+                        "metrics": [],
+                        "replica_kms_key_id": "",
+                        "replication_time": [],
+                        "storage_class": ""
+                      }
+                    ],
+                    "filter": [
+                      {
+                        "prefix": null,
+                        "tags": null
+                      }
+                    ],
+                    "id": "replication-to -pj-dev",
+                    "prefix": "",
+                    "priority": 0,
+                    "source_selection_criteria": [],
+                    "status": "Enabled"
+                  }
+                ]
+              }
+            ],
+            "request_payer": "BucketOwner",
+            "server_side_encryption_configuration": [],
+            "tags": {},
+            "tags_all": {},
+            "versioning": [
+              {
+                "enabled": true,
+                "mfa_delete": false
+              }
+            ],
+            "website": [],
+            "website_domain": null,
+            "website_endpoint": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjAifQ=="
+        }
+      ]
+    }
+  ]
+}
