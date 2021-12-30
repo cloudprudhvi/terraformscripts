@@ -3,3 +3,4 @@ adding content from 2nd developer
 checking for rebase
 adding tag
 pushing tag
+1st commit
