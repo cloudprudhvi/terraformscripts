@@ -9,3 +9,11 @@ terraform {
   provider "aws" {
     region = "us-west-2"
   }
+terraform {
+  backend "s3" {
+    bucket = "terraform488"
+    key    = "dev/"
+    region = "us-west-2"
+  }
+}
+
