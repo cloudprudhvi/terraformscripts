@@ -14,6 +14,7 @@ terraform {
     bucket = "terraform488"
     key    = "dev/terraform.tfstate"
     region = "us-west-2"
+    dynamodb_table = "statefile-lock"
   }
 }
 
